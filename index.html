@@ -8,58 +8,15 @@
   </head>
   <body>
     <div class="curtain"></div>
-    <img src="assets/val.png" alt="date?" class="header-img" />
+    <img src="assets/date.png" alt="date?" class="header-img" />
     
     <div class="container" id="container">
       <img src="assets/flowers.gif" alt="please" class="image-1" />
       <img src="assets/200.gif" alt="yes" class="image-2 hide" />
       <button class="btn btn-yes">Yes</button>
       <button class="btn btn-no">No</button>
-      <a href="https://vimeo.com/1041554380" class="link hide" id="result-link" target="_blank">Go to the surprise!</a>
+      <a href="https://www.youtube.com/watch?v=wY5GE-EmGaI" class="link hide" id="result-link" target="_blank">Go to the surprise!</a>
     </div>
-
-    <!-- Text transition container -->
-    <div class="container" id="text">Will you be my Valentine?</div>
-
-    <script>
-        const phrases = [
-            "Will you be my Valentine?",
-            "Serás mi San Valentín?",
-            "Veux-tu être mon Valentin/ma Valentine?",
-            "Willst du mein Valentin sein?",
-            "Vuoi essere il mio Valentino/la mia Valentina?",
-            "Você quer ser meu/minha valentine?",
-            "Wil je mijn Valentijn zijn?",
-            "Ty budesh' moim Valentinom/moey Valentinoy?",
-            "Watashi no barentain ni natte kuremasu ka?",
-            "Nae ballenta-in-i doeeo jullae?",
-            "Nǐ yuànyì zuò wǒ de qíngrén ma?",
-            "Tum mere valentine banogi?",
-            "Apni valentine baniba ki?",
-            "O le avea ma lo’u Valentine?",
-            "Ka ba tla nna Valentine ya ka?",
-            "Ndozova valentine yangu here?",
-            "Se o le jẹ Valentine mi?",
-            "Bist du bereit, mein Valentine zu sein?",
-            "Cô có muốn làm Valentine của tôi không?",
-            "Ayaw mo ba na maging Aking Valentine?",
-            "Kya tum meri Valentine banogi?"
-        ];
-
-        let index = 0;
-        function changeText() {
-            const textElement = document.getElementById("text");
-            textElement.style.opacity = 0; // Fade out
-            setTimeout(() => {
-                textElement.textContent = phrases[index]; 
-                textElement.style.opacity = 1; // Fade in
-                index = (index + 1) % phrases.length; // Loop back
-            }, 300); 
-        }
-
-        setInterval(changeText, 500);
-    </script>
-
     <script src="main.js"></script>
   </body>
 </html>
